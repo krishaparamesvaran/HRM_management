@@ -1,68 +1,75 @@
-<!DOCTYPE html>
+ 
+
+                <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HRMS - Sign In</title>
-    <link rel="stylesheet" href="style.css">
+    <title>HRMS Login</title>
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
 </head>
-<body class="login-body">
+<body>
     <div class="login-container">
-        <!-- Left: Form -->
         <div class="login-form-section">
             <div class="login-card">
                 <div class="login-header">
-                    <div class="avatar">
-                        <i class="fas fa-user-circle"></i>
+                    <div class="login-logo">
+                        <i class="fas fa-briefcase"></i>
                     </div>
                     <h2>HRMS</h2>
                     <p>Sign In</p>
                 </div>
 
-                <form class="login-form" id="loginForm">
-                    <div class="role-toggle" role="tablist" aria-label="Role selector">
-                        <button type="button" class="role-btn active" data-role="User">User</button>
-                        <button type="button" class="role-btn" data-role="Admin">Admin</button>
+                <form id="loginForm" class="login-form">
+                    <!-- Role Toggle -->
+                    <div class="role-toggle-container">
+                        <label class="role-toggle">
+                            <input type="radio" name="role" value="User" checked>
+                            <span class="role-label">User</span>
+                        </label>
+                        <label class="role-toggle">
+                            <input type="radio" name="role" value="Admin">
+                            <span class="role-label">Admin</span>
+                        </label>
                     </div>
 
-                    <div class="form-group">
-                        <div class="input-wrapper">
-                            <i class="fas fa-envelope"></i>
-                            <input type="email" id="email" name="email" placeholder="Email" required>
-                        </div>
+                    <!-- Email Input -->
+                    <div class="input-wrapper">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="email" placeholder="Email Address" required>
                     </div>
 
-                    <div class="form-group">
-                        <div class="input-wrapper">
-                            <i class="fas fa-lock"></i>
-                            <input type="password" id="password" name="password" placeholder="Password" required>
-                        </div>
+                    <!-- Password Input -->
+                    <div class="input-wrapper">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="password" placeholder="Password" required>
                     </div>
 
-                    <div class="form-options">
+                    <!-- Remember Me & Forgot Password -->
+                    <div class="login-options">
                         <label class="remember-me">
-                            <input type="checkbox" name="remember">
+                            <input type="checkbox" id="rememberEmail">
                             <span>Remember me</span>
                         </label>
                         <a href="#" class="forgot-password">Forgot Password?</a>
                     </div>
 
+                    <!-- Sign In Button -->
                     <button type="submit" class="login-btn">Sign In</button>
                 </form>
 
+                <!-- Contact HR Link -->
                 <div class="login-footer">
-                    <p>Need access? <a href="#">Contact HR</a></p>
+                    <p>Need access? <a href="#" class="contact-hr">Contact HR</a></p>
                 </div>
             </div>
         </div>
 
-        <!-- Right: Illustration -->
-        <div class="login-illustration" aria-hidden="true">
+        <!-- Right Side Illustration -->
+        <div class="login-illustration">
             <div class="illustration-content">
-                <!-- Simple flat illustration using icons/text; can be replaced with SVG/image -->
-                <div class="illus-graphics">
+                <div class="illustration-icon">
                     <i class="fas fa-users"></i>
                     <i class="fas fa-chart-line"></i>
                     <i class="fas fa-briefcase"></i>
@@ -73,6 +80,6 @@
         </div>
     </div>
 
-    <script src="login.js"></script>
+    <script src="./login.js"></script>
 </body>
 </html>
