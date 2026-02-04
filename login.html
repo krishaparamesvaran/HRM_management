@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HRMS - Sign In</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body class="login-body">
+    <div class="login-container">
+        <!-- Left: Form -->
+        <div class="login-form-section">
+            <div class="login-card">
+                <div class="login-header">
+                    <div class="avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h2>HRMS</h2>
+                    <p>Sign In</p>
+                </div>
+
+                <form class="login-form" id="loginForm">
+                    <div class="role-toggle" role="tablist" aria-label="Role selector">
+                        <button type="button" class="role-btn active" data-role="User">User</button>
+                        <button type="button" class="role-btn" data-role="Admin">Admin</button>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-wrapper">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-wrapper">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="password" name="password" placeholder="Password" required>
+                        </div>
+                    </div>
+
+                    <div class="form-options">
+                        <label class="remember-me">
+                            <input type="checkbox" name="remember">
+                            <span>Remember me</span>
+                        </label>
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                    </div>
+
+                    <button type="submit" class="login-btn">Sign In</button>
+                </form>
+
+                <div class="login-footer">
+                    <p>Need access? <a href="#">Contact HR</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right: Illustration -->
+        <div class="login-illustration" aria-hidden="true">
+            <div class="illustration-content">
+                <!-- Simple flat illustration using icons/text; can be replaced with SVG/image -->
+                <div class="illus-graphics">
+                    <i class="fas fa-users"></i>
+                    <i class="fas fa-chart-line"></i>
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <h3>People. Insights. Growth.</h3>
+                <p>Manage employees, analytics and learning in one place.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
