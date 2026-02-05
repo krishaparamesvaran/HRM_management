@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HRMS Login</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-form-section">
+            <div class="login-card">
+                <div class="login-header">
+                    <div class="login-logo">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h2>HRMS</h2>
+                    <p>Sign In</p>
+                </div>
+
+                <form id="loginForm" class="login-form">
+                    <!-- Role Toggle -->
+                    <div class="role-toggle-container">
+                        <label class="role-toggle">
+                            <input type="radio" name="role" value="User" checked>
+                            <span class="role-label">User</span>
+                        </label>
+                        <label class="role-toggle">
+                            <input type="radio" name="role" value="Admin">
+                            <span class="role-label">Admin</span>
+                        </label>
+                    </div>
+
+                    <!-- Email Input -->
+                    <div class="input-wrapper">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="email" placeholder="Email Address" required>
+                    </div>
+
+                    <!-- Password Input -->
+                    <div class="input-wrapper">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="password" placeholder="Password" required>
+                    </div>
+
+                    <!-- Remember Me & Forgot Password -->
+                    <div class="login-options">
+                        <label class="remember-me">
+                            <input type="checkbox" id="rememberEmail">
+                            <span>Remember me</span>
+                        </label>
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                    </div>
+
+                    <!-- Sign In Button -->
+                    <button type="submit" class="login-btn">Sign In</button>
+                </form>
+
+                <!-- Contact HR Link -->
+                <div class="login-footer">
+                    <p>Need access? <a href="#" class="contact-hr">Contact HR</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side Illustration -->
+        <div class="login-illustration">
+            <div class="illustration-content">
+                <div class="illustration-icon">
+                    <i class="fas fa-users"></i>
+                    <i class="fas fa-chart-line"></i>
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <h3>People. Insights. Growth.</h3>
+                <p>Manage employees, analytics and learning in one place.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./login.js"></script>
+</body>
+</html>
